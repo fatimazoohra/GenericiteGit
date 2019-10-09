@@ -1,0 +1,25 @@
+package genericitep;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map.Entry;
+
+public class Main2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap<Integer, String> hash= new HashMap<Integer, String>();
+		hash.put(1,"one");
+		hash.put(1,"one");
+		hash.put(2,"two");
+		hash.put(3,"three");
+		System.out.println(hash);
+		//Iterator it = hash.Iterator();
+		Iterator<Entry<Integer, String>> it = hash.entrySet().iterator();
+		while(it.hasNext()) {
+			it.remove();
+		}
+		
+
+	}
+
+}

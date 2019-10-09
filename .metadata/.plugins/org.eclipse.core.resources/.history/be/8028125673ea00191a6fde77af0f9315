@@ -1,0 +1,43 @@
+package genericitep;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+public class Main2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap<Integer, String> hash= new HashMap<Integer, String>();
+		hash.put(1,"one");
+		hash.put(1,"one");
+		hash.put(2,"two");
+		hash.put(3,"three");
+		System.out.println(hash);
+		//Iterator it = hash.Iterator();
+		Iterator<Entry<Integer, String>> it = hash.entrySet().iterator();
+		while(it.hasNext()) {
+			Entry<Integer, String> str = it.next();
+		
+			it.remove();
+			
+		}
+		// ******Methode keySet************* 
+		/*Map<Integer, String> map= new HashMap<Integer, String>();
+		map.put(1,"one");
+		map.put(1,"one");
+		map.put(2,"two");
+		map.put(3,"three");
+		Set<Integer> setInt = map.keySet();
+		Iterator<Integer> it = setInt.iterator();
+		
+		System.out.println("Parcourir d une map avec keyset");
+		while(it.hasNext()) {
+			int key = it.next();
+			System.out.println("la valeur de  la cle "+key+ "   =  " +map.get(key));	
+		}*/
+
+	}
+
+}

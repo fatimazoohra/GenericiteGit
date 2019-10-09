@@ -1,0 +1,6 @@
+package genericitep;
+
+public class Solo<T> {
+	public String valeur;
+
+}

@@ -1,0 +1,25 @@
+package genericitep;
+
+public class Solo<T> {
+	private T valeur;
+	public Solo() {
+		this.valeur=null;
+	}
+	public Solo(T valeur) {
+		this.valeur= valeur;
+	}
+	public String toString() {
+		return ""+this.valeur;
+	}
+	public void setValeur(T val) {
+		this.valeur=val;
+	}
+	//public 
+	public static void main() {
+		Solo<Integer> s1 = new Solo<Integer>(123);
+		Solo<Double> s2 = new Solo<Double>(120.954);
+		System.out.println(s1);
+		System.out.println(s2);
+	}
+}
+
